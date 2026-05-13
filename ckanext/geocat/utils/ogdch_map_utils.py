@@ -261,7 +261,7 @@ def _remove_duplicate_term_in_name(name, term):
     if not name:
         return ""
     if name.startswith(term):
-        return name[len(term):]
+        return name[len(term) :]
     return name
 
 

@@ -144,8 +144,7 @@ def _apply_map_preview_title(title_dict, desc_dict, format_uri):
 
     # Step 1 – fill missing languages from description
     filled = {
-        lang: title_dict.get(lang) or desc_dict.get(lang, "")
-        for lang in CKAN_LANGS
+        lang: title_dict.get(lang) or desc_dict.get(lang, "") for lang in CKAN_LANGS
     }
 
     # Step 2 – prepend "Map (Preview)" prefix

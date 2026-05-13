@@ -617,9 +617,7 @@ class TestLandesschwerenetzDcatMapping(unittest.TestCase):
         self.assertEqual(self.dataset["issued"], "2015-08-10T00:00:00")
 
     def test_accrual_periodicity(self):
-        self.assertIn(
-            "UNKNOWN", self.dataset["accrual_periodicity"]
-        )
+        self.assertIn("UNKNOWN", self.dataset["accrual_periodicity"])
 
     def test_five_resources(self):
         self.assertEqual(len(self.dataset["resources"]), 5)
